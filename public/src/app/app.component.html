@@ -1,0 +1,13 @@
+<h1 class = "text-center" > Welcome to {{ title }} </h1>
+<table class = "table"> 
+    <tr> 
+        <th scope ="col"> <a class = "btn btn-success" [routerLink]="['/new']"> Add New Product</a></th>
+        <!-- <th scope ="col"> <a class = "btn btn-info" [routerLink]="['/']"> Show Product List</a></th> -->
+        <th scope ="col"> <a class = "btn btn-primary" [routerLink]="['/home']"> Home </a></th>
+
+    </tr>
+    
+</table>
+
+
+<router-outlet></router-outlet>

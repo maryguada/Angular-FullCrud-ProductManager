@@ -1,0 +1,13 @@
+<div class = "container">
+    <h4> Edit Product </h4>
+
+    <form (submit) = "editProduct()">  
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.title" [(ngModel)] ="product.title" >
+        <p class = "text-danger"> {{ err.title }}</p>
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.price" [(ngModel)] ="product.price" >
+        <p class = "text-danger"> {{ err.price }}</p>
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.url" [(ngModel)] ="product.url" >
+        <p class = "text-danger"> {{ err.url}}</p>
+        <input type = "submit" class = "btn btn-secondary" >
+</form>
+</div>

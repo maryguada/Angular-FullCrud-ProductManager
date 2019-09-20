@@ -1,0 +1,15 @@
+<div class = "container">
+    <h4> Add A New Product</h4>
+    
+    <form (submit) = "createProduct()">  
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.title" [(ngModel)] ="product.title" placeholder="Title">
+        <p class = "text-danger"> {{ err.title }}</p>
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.price" [(ngModel)] ="product.price" placeholder="Price">
+        <p class = "text-danger"> {{ err.price }}</p>
+        <input type = "text" class = "form-control col-6 mb-2" name = "product.url" [(ngModel)] ="product.url" placeholder="URL">
+        <p class = "text-danger"> {{ err.url}}</p>
+        <input type = "submit" class = "btn btn-secondary" >
+
+ 
+    </form>
+</div>
